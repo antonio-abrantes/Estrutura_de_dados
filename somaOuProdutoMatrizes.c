@@ -37,14 +37,15 @@ int main()
 	printf("\nEscolha 1 para somar ou 2 para multiplicar: ");
 	scanf("%d", &acao);
 	
-	if(acao == 1){
+	//if para comar ou multiplicar as matrizes A e B
+	if(acao == 1){ //Complexidade n2
 		for(i = 0; i < 3; i++){
 			for(j = 0; j < 3; j++){
 				resul[i][j] = matA[i][j] + matB[i][j];
 			}
 		}
 		matriz(resul);
-	}else if(acao == 2){
+	}else if(acao == 2){  // Complexidade n3
 		if(lin == col){ //Verifica se é possivel calcular o produto da matriz...
 		   	int d;
 			for(i = 0; i < 3; i++){
